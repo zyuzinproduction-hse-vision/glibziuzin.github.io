@@ -127,7 +127,11 @@
                     <div class="absolute top-0 right-0 w-64 h-64 bg-blue-500/5 rounded-[2.5rem] blur-3xl -mr-20 -mt-20 transition-all group-hover:bg-blue-500/10"></div>
                     <div class="relative z-10">
                         <div class="w-12 h-12 bg-blue-50 text-[#0071e3] rounded-2xl flex items-center justify-center mb-6">
-                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"></path></svg>
+                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <rect x="3" y="11" width="6" height="10" rx="2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <rect x="9" y="7" width="6" height="14" rx="2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <rect x="15" y="3" width="6" height="18" rx="2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
                         </div>
                         <h3 class="text-3xl md:text-4xl font-semibold text-[#1d1d1f] mb-4 tracking-tight">Your own benchmark profile</h3>
                         <p class="text-sm md:text-xl text-[#424245] font-normal leading-relaxed max-w-3xl">
@@ -208,7 +212,7 @@
     </section>
 
     <footer class="w-full bg-[#fbfbfd] border-t border-gray-200 py-8 px-6 mt-auto">
-        <div class="max-w-7xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-4">
+        <div class="max-w-7xl mx-auto flex flex-col-reverse sm:flex-row justify-between items-center gap-4">
             <div class="text-[12px] text-[#86868b]">
                 &copy; 2026 Glib Ziuzin. All rights reserved.
             </div>
@@ -234,8 +238,8 @@
                     }
                 });
             }, {
-                threshold: 0.1, // Triggers when 10% of the element is visible
-                rootMargin: '0px 0px -50px 0px' // Triggers slightly before it fully comes into view
+                threshold: 0.1, 
+                rootMargin: '0px 0px -50px 0px' 
             });
 
             document.querySelectorAll('.reveal-text').forEach((el) => {
